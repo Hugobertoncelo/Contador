@@ -5,8 +5,14 @@
 .image {
   display: flex;
   margin: auto;
-  width: 50%;
+  width: 30%;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 80%;
+  }
 }
 
 .counter {
@@ -14,10 +20,23 @@
   margin: auto;
   justify-content: center;
   font-size: 60px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .counter {
+    font-size: 40px;
+  }
 }
 
 .zero {
   font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .zero {
+    font-size: 30px;
+  }
 }
 
 body {
@@ -46,6 +65,13 @@ body {
   touch-action: manipulation;
 }
 
+@media (max-width: 480px) {
+  .button-start {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
 .button-stop {
   background-color: #c2fbd7;
   border-radius: 100px;
@@ -65,7 +91,14 @@ body {
   font-size: 16px;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;;
+  touch-action: manipulation;
+}
+
+@media (max-width: 480px) {
+  .button-stop {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 }
 
 button:hover {
